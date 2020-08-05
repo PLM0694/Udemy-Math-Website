@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+#container {
+    width: 90%;
+    /*border: 1px solid grey;*/
+    margin: 0 auto;
+}
+
+#header{
+    /* height: 100px; */
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#brand{
+    /*float:left; */
+    font-family: monospace;
+    flex: 1;
+    min-width: 520px;
+}
+
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: navy;
+    text-decoration: none;
+}
+
+
+#searchBox{
+   /* float: right; */
+    background: linear-gradient(#e2edfd, #6ea6fc);
+    background: -webkit-linear-gradient(#e2edfd, #6ea6fc);
+    background: -o-linear-gradient(#e2edfd, #6ea6fc);
+    background: -moz-linear-gradient(#e2edfd, #6ea6fc);
+    min-width: 400px;
+    /* height: 50px; */
+    padding: 20px;
+    /* margin-top: 15px; */
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.submit{
+    float:right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background:navy;
+    font-size: 15px;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+/*    height: 70px;*/
+    background: radial-gradient(navy, #041471);
+    background: -webkit-radial-gradient(navy, #041471);
+    background: -o-radial-gradient(navy, #041471);
+    background: -moz-radial-gradient(navy, #041471);
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu a{
+/*    float: left;*/
+    padding: 0 30px;
+    height: 30px;
+    border-right: 1px solid white;
+}
+
+#menu a:last-child{
+    border-right: none;
+}
+
+#menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    size: 18px;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+    
+}
+
+#menu a:hover, #menu a.active{
+    font-weight: bold;
+    size: 18px;
+}
+
+/*small screens: vertical menu*/
+@media screen and (max-width: 700px){
+    #menu{
+        flex-direction: column;
+    }
+    #menu a{
+        border-right: none;
+    }
+}
+
+#introduction{
+    background: #e4effb;
+    color: black;
+    padding: 10px;
+    margin: 16px 0;
+}
+
+#introduction h3{
+    font-size: 30px;
+    font-family: serif;
+}
+
+#introduction p{
+    font-size: 18px;
+    font-family: serif;
+    text-align: justify;
+}
+
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+/*
+    height: 480px;
+    width: 400px;
+*/
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    flex: 1;
+    min-width: 350px;
+    margin: 10px;
+}
+
+.sidebar h3{
+    color: navy;
+    font-size: 25px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+/*
+#leftsidebar{
+    float: left;
+    margin-left: 50px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+*/
+
+#leftsidebar ul{
+    padding-top: 8px;
+}
+
+#leftsidebar ul li{
+    padding-bottom: 12px;
+    list-style-image: url(arrow.png);
+    padding-left: 8px;
+}
+
+/*
+#rightsidebar{
+    float: right;
+    margin-right: 50px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+*/
+
+#rightsidebar ul li{
+    list-style-image: url(LogoMakr_0N8cN9.png);
+    padding-left:15px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer{
+    font-size: 15px;
+    padding: 18px;
+    height: 50px;
+/*    width: 930px;*/
+    border: 1px dotted navy;
+    background: linear-gradient(#e2edfd, #6ea6fc);
+/*    margin: 550px 20px 30px 40px;*/
+    display: flex;
+    flex-wrap: wrap;
+}
